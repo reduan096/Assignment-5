@@ -1,6 +1,6 @@
 const completeButtons= document.querySelectorAll(".complete-btn");
 const currentDateTime = new Date();
-const formattedDateTime = currentDateTime.toLocaleString();  // Local format
+const formattedDateTime = currentDateTime.toLocaleString();  
 console.log(formattedDateTime);
 for(let i = 0; i < completeButtons.length; i++){
     const completeBtn= completeButtons[i];
@@ -24,7 +24,7 @@ for(let i = 0; i < completeButtons.length; i++){
         const div= document.createElement("div");
         div.innerHTML= `
             <div class="bg-[#F4F7FF] p-4 text-justify rounded-lg space-y-3 logs">
-                <p>You have Completed the ${taskTitle} at 12.30 p.M</p>      
+                <p>You have Completed the ${taskTitle} at 12.30 p.m</p>      
             </div>
         `
         taskLog.appendChild(div);
